@@ -4,44 +4,14 @@ This is my personal hack of [Donne Martin's](https://github.com/donnemartin/dev-
 
 If you find this useful and would like to [collaborate](https://help.github.com/categories/collaborating-with-issues-and-pull-requests/) then send a [pull request](https://help.github.com/articles/proposing-changes-to-your-work-with-pull-requests/). Or reach out to [Donne](https://github.com/donnemartin) and get in on the bigger project.
 
+
+
+Files need to be chmodded before starting:
+
+chmod -R 777 macos-highsierra-dev-setup
+ 
 ============
 
-## Motivation
-
-Setting up a new developer machine can be an **ad-hoc, manual, and time-consuming** process.  `dev-setup` aims to **simplify** the process with **easy-to-understand instructions** and **dotfiles/scripts** to **automate the setup** of the following:
-
-* **OS X updates and Xcode Command Line Tools**
-* **OS X defaults** geared towards developers
-* **Developer tools**: Vim, bash, tab completion, curl, git, GNU core utils, Python, Ruby, etc
-* **Developer apps**: iTerm2, Sublime Text, Atom, VirtualBox, Vagrant, Docker, Chrome, etc
-* **Python data analysis**: IPython Notebook, NumPy, Pandas, Scikit-Learn, Matplotlib, etc
-* **Big Data platforms**: Spark (with IPython Notebook integration) and MapReduce
-* **Cloud services**: Amazon Web Services (Boto, AWS CLI, S3cmd, etc) and Heroku
-* **Common data stores**: MySQL, PostgreSQL, MongoDB, Redis, and Elasticsearch
-* **Javascript web development**: Node.js, JSHint, and Less
-* **Android development**: Java, Android SDK, Android Studio, IntelliJ IDEA
-
-### But...I Don't Need All These Tools!
-
-**`dev-setup` is geared to be more of an organized *reference* of various developer tools.**
-
-**You're *not* meant to install everything.**
-
-If you're interested in automation, `dev-setup` provides a customizable [setup script](#single-setup-script).  There's really no one-size-fits-all solution for developers so you're encouraged to make tweaks to suit your needs.
-
-[Credits](#credits): This repo builds on the awesome work from [Mathias Bynens](https://github.com/mathiasbynens) and [Nicolas Hery](https://github.com/nicolashery).
-
-### For Automation, What About Vagrant, Docker, or Boxen?
-
-[Vagrant](#vagrant) and [Docker](#docker) are great tools and are set up by this repo. I've found that Vagrant works well to ensure dev matches up with test and production tiers. I've only started playing around with Docker for side projects and it looks very promising. However, for Mac users, Docker and Vagrant both rely on **virtual machines**, which have their own considerations/pros/cons.
-
-[Boxen](https://boxen.github.com/) is a cool solution, although some might find it better geared towards "more mature companies or devops teams". I've seen some discussions of [difficulties as it is using Puppet under the hood](https://github.com/boxen/our-boxen/issues/742).
-
-This repo takes a more **light-weight** approach to automation using a combination of **Homebrew, Homebrew Cask, and shell scripts** to do basic system setup.  It also provides **easy-to understand instructions** for installation, configuration, and usage for each developer app or tool.
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/donnemartin/dev-setup-resources/master/res/iterm2.png">
-</p>
 
 ### Sections Summary
 * Section 1 contains the dotfiles/scripts and instructions to set up your system.
@@ -1867,40 +1837,4 @@ If you prefer to install it separately, you can download it [here](https://www.j
     $ brew install caskroom/cask/brew-cask
     $ brew cask install --appdir="~/Applications" intellij-idea-ce
 
-## Section 8: Misc
 
-### Contributions
-
-Bug reports, suggestions, and pull requests are [welcome](https://github.com/donnemartin/dev-setup/issues)!
-
-### Credits
-
-See the [Credits Page](https://github.com/donnemartin/dev-setup/blob/master/CREDITS.md).
-
-## Contact Info
-
-Feel free to contact me to discuss any issues, questions, or comments.
-
-My contact info can be found on my [GitHub page](https://github.com/donnemartin).
-
-### License
-
-This repository contains a variety of content; some developed by Donne Martin, and some from third-parties.  The third-party content is distributed under the license provided by those parties.
-
-The content developed by Donne Martin is distributed under the following license:
-
-*I am providing code and resources in this repository to you under an open source license.  Because this is my personal repository, the license you receive to my code and resources is from me and not my employer (Facebook).*
-
-    Copyright 2015 Donne Martin
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
